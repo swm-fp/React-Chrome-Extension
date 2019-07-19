@@ -1,4 +1,4 @@
-'use strict';
+
 
 const path = require('path');
 const fs = require('fs');
@@ -52,4 +52,9 @@ module.exports = {
   appNodeModules: resolveApp('node_modules'),
   publicUrl: getPublicUrl(resolveApp('package.json')),
   servedPath: getServedPath(resolveApp('package.json')),
+  
+  newtabHtml: resolveApp('public/newtab.html'),
+  popupHtml: resolveApp('public/popup.html'),
+  newtabJs: resolveApp('src/newtab.js'),
+  popupJs: resolveApp('src/popup.js')
 };
