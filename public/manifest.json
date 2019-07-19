@@ -1,10 +1,13 @@
 {
-  "short_name": "My Extension",
-  "name": "My Extension",
+  "short_name": "F",
+  "name": "FLOWER",
   "version": "1.0",
   "manifest_version": 2,
   "background": {
     "scripts": ["app/background.js"]
+  },
+  "chrome_url_overrides" : {
+    "newtab" : "index.html"
   },
   "browser_action": {},
   "content_scripts" : [
